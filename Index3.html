@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Decorative Content</title>
+
+        <style>
+            .card{
+                height: 100px;
+                width: 200px;
+                background-color: bisque;
+                color: rgb(54, 51, 48);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                transition: transform 0.5s ease;
+            }
+            .card:hover{
+                transform: scale(1.1);
+            }
+            .card::before{
+                content: "👩";
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+            }
+            .card::after{
+                content: "👩🏽‍💻";
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+
+            }
+            .card:focus{
+                outline:20px solid blueviolet;
+            }
+            .card:active{
+                color: rgb(23, 50, 2);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <div class = "card" tabindex="0">Hover me</div>
+        </div>
+    </body>
+</html>
