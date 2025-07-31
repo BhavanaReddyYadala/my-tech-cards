@@ -12,3 +12,6 @@ A responsive web layout displaying my current tech stack using **HTML** and **CS
 - Smooth scaling and background transitions
 - Mobile-friendly design with `clamp()` for font scaling
 - Clean structure and reusable styles
+
+  # Run
+  git clone https://github.com/BhavanaReddyYadala/my-tech-cards.git
